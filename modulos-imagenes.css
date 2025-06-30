@@ -11,12 +11,16 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 2.5rem 1.2rem 2.5rem;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  box-sizing: border-box;
 }
 
 .header-left {
   display: flex;
   align-items: center;
   gap: 2.2rem;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -67,6 +71,8 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 1.5rem 2.5rem 0 2.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .bienvenida {
@@ -95,6 +101,8 @@ body {
   margin: 0 auto;
   box-shadow: 0 3px 24px #0005;
   transition: transform 0.16s cubic-bezier(.67,.19,.3,1.26), box-shadow 0.14s;
+  background: #191919;
+  min-height: 80px;
 }
 
 .modulo-card:hover {
@@ -143,30 +151,92 @@ body {
   background: linear-gradient(90deg, #88888899 65%, #3e3e3e 100%);
 }
 
-/* Responsive */
+/* Responsive para tablets */
 @media (max-width: 900px) {
   .main-content {
     padding: 1rem 0.5rem 0 0.5rem;
+    max-width: 98vw;
   }
   .modulo-card {
     height: 120px;
+    min-height: 60px;
+  }
+  .modulo-overlay {
+    font-size: 1.1rem;
+    padding-right: 2rem;
   }
 }
 
+/* Responsive para móviles medianos */
 @media (max-width: 600px) {
   .header {
-    padding: 1.5rem 0.5rem 1rem 0.5rem;
+    padding: 1.1rem 0.5rem 0.8rem 0.5rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
+  .header-left {
+    gap: 1rem;
+  }
+  .logo {
+    font-size: 1.17rem;
+  }
+  .header-title {
+    font-size: 1rem;
+  }
+  .logout {
+    font-size: 1rem;
+  }
+  .main-content {
+    padding: 0.8rem 0.1rem 0.1rem 0.1rem;
+  }
+  .bienvenida {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
   .modulo-card {
-    height: 28vw;
-    min-height: 70px;
-    max-height: 150px;
+    height: 25vw;
+    min-height: 50px;
+    max-height: 90px;
+    border-radius: 10px;
   }
   .modulo-overlay {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-right: 1.2rem;
+  }
+}
+
+/* Responsive para móviles pequeños */
+@media (max-width: 390px) {
+  .header {
+    padding: 0.6rem 0.1rem 0.5rem 0.1rem;
+    gap: 0.3rem;
+  }
+  .logo {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  .header-title {
+    font-size: 0.82rem;
+    letter-spacing: 0.04rem;
+  }
+  .logout {
+    font-size: 0.83rem;
+    gap: 0.2rem;
+  }
+  .main-content {
+    padding: 0.2rem 0.01rem 0 0.01rem;
+  }
+  .bienvenida {
+    font-size: 0.91rem;
+  }
+  .modulo-card {
+    min-height: 36px;
+    max-height: 60px;
+    border-radius: 7px;
+  }
+  .modulo-overlay {
+    font-size: 0.71rem;
+    padding-right: 0.7rem;
   }
 }

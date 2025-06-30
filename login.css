@@ -12,10 +12,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 1rem;
 }
 
 .login-avatar {
   margin-bottom: 24px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .login-box {
@@ -26,14 +33,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
-  min-width: 300px;
+  min-width: 320px;
+  max-width: 380px;
+  width: 100%;
   box-sizing: border-box;
   margin-bottom: 2.5rem;
 }
 
 .login-box label {
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   margin-bottom: 0.2rem;
@@ -46,6 +55,8 @@ body {
   font-size: 1rem;
   outline: none;
   margin-bottom: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .login-brand {
@@ -55,6 +66,7 @@ body {
   font-weight: 900;
   font-size: 1.1rem;
   letter-spacing: 0.15rem;
+  margin-top: 0.7rem;
 }
 
 .login-brand .jc {
@@ -87,11 +99,36 @@ body {
   background: #c7281d;
 }
 
-/* Responsive */
-@media (max-width: 400px) {
+/* Responsive: tablets */
+@media (max-width: 700px) {
   .login-box {
-    padding: 1rem 0.5rem 1rem 0.5rem;
+    padding: 1.2rem 1rem 1.1rem 1rem;
     min-width: 0;
-    width: 95vw;
+    max-width: 95vw;
+  }
+  .login-avatar {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+/* Responsive: móviles */
+@media (max-width: 400px) {
+  .login-container {
+    padding: 1rem 0.3rem;
+  }
+  .login-box {
+    padding: 0.7rem 0.3rem 0.8rem 0.3rem;
+    min-width: 0;
+    width: 99vw;
+    max-width: 99vw;
+    border-radius: 8px;
+  }
+  .login-brand {
+    font-size: 0.99rem;
+  }
+  .login-btn {
+    font-size: 0.97rem;
+    padding: 0.5rem 0;
   }
 }
