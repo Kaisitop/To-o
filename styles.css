@@ -1,0 +1,51 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: repeating-linear-gradient(135deg, #191919 0%, #232323 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+}
+
+.jc {
+  color: #eb3223;
+  margin-right: 0.3rem;
+}
+
+.motors {
+  color: #fff;
+  margin-left: 0.3rem;
+  letter-spacing: 0.5rem;
+}
+
+.start-btn {
+  background-color: #eb3223;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2.5rem;
+  border-radius: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.start-btn:hover {
+  background: #c7281d;
+}

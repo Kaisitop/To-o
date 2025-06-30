@@ -1,0 +1,132 @@
+body {
+  font-family: 'Montserrat', 'Century Gothic', Arial, Helvetica, sans-serif;
+  background: repeating-linear-gradient(135deg, #191919 0%, #232323 100%);
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 2.5rem 1.2rem 2.5rem;
+}
+.logo {
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.logo .jc { color: #eb3223; }
+.logo .motors { color: #fff; margin-left: 0.2rem;}
+.logout {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', 'Century Gothic', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 2.5rem 0 2.5rem;
+}
+.video-frame {
+  background: #111;
+  border-radius: 16px;
+  margin: 2rem auto 0 auto;
+  padding: 1rem;
+  max-width: 700px;
+  box-shadow: 0 8px 32px #0006;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo-video {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.iframe-responsive {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  background: #222;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* SHORTS Mejorado */
+.iframe-responsive.short {
+  aspect-ratio: 9 / 16;
+  max-width: 360px;
+  min-width: 220px;
+  margin: 0 auto;
+  background: #222;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px #0004;
+}
+
+.iframe-responsive iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .main-content {
+    max-width: 100%;
+    padding: 1rem 1rem 0 1rem;
+  }
+  .video-frame {
+    max-width: 100%;
+    padding: 0.8rem;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    padding: 1.5rem 1rem 1rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+  .main-content {
+    padding: 1rem 0.5rem 0 0.5rem;
+  }
+  .video-frame {
+    margin: 1.2rem auto 0 auto;
+    padding: 0.5rem;
+  }
+  .titulo-video {
+    font-size: 1.07rem;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding: 1.1rem 0.4rem 0.7rem 0.4rem;
+    gap: 0.5rem;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .logout {
+    font-size: 0.98rem;
+  }
+  .video-frame {
+    padding: 0.3rem;
+    border-radius: 7px;
+  }
+  .titulo-video {
+    font-size: .97rem;
+    margin-bottom: 0.7rem;
+  }
+  .iframe-responsive {
+    border-radius: 6px;
+  }
+  .iframe-responsive.short {
+    border-radius: 6px;
+  }
+}

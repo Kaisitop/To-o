@@ -1,0 +1,97 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: repeating-linear-gradient(135deg, #191919 0%, #232323 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-avatar {
+  margin-bottom: 24px;
+}
+
+.login-box {
+  background: #eb3223;
+  border-radius: 14px;
+  border: 2px solid #fff;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  min-width: 300px;
+  box-sizing: border-box;
+  margin-bottom: 2.5rem;
+}
+
+.login-box label {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+
+.login-box input {
+  border: none;
+  border-radius: 7px;
+  padding: 0.55rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 0.5rem;
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.1rem;
+  letter-spacing: 0.15rem;
+}
+
+.login-brand .jc {
+  color: #eb3223;
+  margin-right: 0.2rem;
+}
+
+.login-brand .motors {
+  color: #fff;
+  margin-left: 0.2rem;
+  letter-spacing: 0.25rem;
+}
+.login-btn {
+  background-color: #eb3223;
+  color: #fff;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.7rem 0;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-btn:hover {
+  background: #c7281d;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .login-box {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    min-width: 0;
+    width: 95vw;
+  }
+}
