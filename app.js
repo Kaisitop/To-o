@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const password = form.password.value.trim();
       if (usuario === credenciales.usuario && password === credenciales.password) {
         // Redirige al usuario a "modulos.html"
-        window.location.href = "modulos.html";
+        window.location.href = "modulos-imagenes.html";
       } else {
         alert("Usuario o contraseña incorrectos");
         form.password.value = "";
