@@ -168,3 +168,23 @@ body {
     min-width: 0;
   }
 }
+
+.boton-encuesta {
+  margin-top: 1.5rem;
+  display: inline-block;
+  background-color: #eb3223;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.7em 1.4em;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px #0005;
+  transition: background 0.25s, transform 0.25s;
+}
+
+.boton-encuesta:hover {
+  background-color: #ff4433;
+  transform: scale(1.03);
+}
